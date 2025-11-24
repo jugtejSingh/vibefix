@@ -1,0 +1,28 @@
+.InformationBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    padding: 1.4rem;
+    gap: 1rem;
+    width: 100%;
+
+    /* gradient border fix */
+    border: 2px solid transparent; /* needed */
+    background:
+            linear-gradient(#000000 0 0) padding-box,
+            linear-gradient(
+                    90deg,
+                    rgba(74, 36, 132, 1) 0%,
+                    rgba(127, 0, 113, 1) 100%
+            ) border-box;
+}
+.InformationBox p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.InformationBoxImage {
+  width: 15%;
+  height: 15%;
+}

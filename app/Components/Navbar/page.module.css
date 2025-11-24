@@ -1,0 +1,19 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.Navbar__logo {
+  margin-left: 3rem;
+  width: 18rem;
+  height: 9rem;
+}
+.Navbar__links {
+  display: flex;
+  gap: 3rem;
+  margin-right: 5vw;
+  justify-content: center;
+  flex-direction: row;
+}

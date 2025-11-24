@@ -1,0 +1,19 @@
+.Link{
+    padding-bottom: 0.8rem;
+}
+.Line{
+    width: 0;
+    border-bottom : 2px solid white;
+    padding-top: 0.5rem;
+}
+.Link:hover .Line{
+    animation: LineUnderneath 2s forwards;
+}
+@keyframes LineUnderneath {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
