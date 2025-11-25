@@ -1,0 +1,11 @@
+.Label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Input {
+  height: 2.5rem;
+  background-color: #45105d;
+  border: none;
+  border-radius: 8px;
+}

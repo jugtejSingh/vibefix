@@ -1,17 +1,45 @@
-.BuyNowBox{
-margin-top: -1.8rem;
-    padding-top: 1rem;
-    z-index: 1;
-    background: black;
-    width: 25rem;
+.BuyNowBox {
+  margin-top: -1.8rem;
+  padding-top: 1rem;
+  z-index: 1;
+  background: black;
+  width: 25rem;
 }
-.InnerBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-    background: pink;
+.InnerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  border-radius: 1rem;
+  position: relative;
 }
-.InnerBoxHeading{
-    font-size: 2rem;
+.InnerBoxHeading {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  justify-content: space-between;
+  margin-right: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  align-items: center;
+  white-space: pre-wrap;
+}
+.InnerBoxIcons {
+  width: 15%;
+  height: auto;
+}
+.InnerBoxText {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 3rem;
+}
+.InnerBoxButton {
+  width: 30%;
+  height: 3rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  position: absolute;
+  border: none;
+  bottom: -2vw;
 }

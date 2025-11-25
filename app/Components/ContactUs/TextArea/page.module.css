@@ -1,0 +1,10 @@
+.Label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.TextArea {
+  background-color: #45105d;
+  border: none;
+  border-radius: 8px;
+}
