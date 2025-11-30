@@ -22,18 +22,16 @@
   );
 }
 .Image {
-  position: absolute;
-  top: -10vh;
-  width: 130%;
-  height: 130%;
+  margin-top: -10vh;
+  width: 120%;
+  height: 120%;
 }
 .InputFields {
-  padding-left: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-left: 3%;
+  padding-top: 3%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.3rem;
   width: 50%;
 }
 .ImageAnchor {
@@ -41,10 +39,42 @@
   width: 50%;
 }
 .Button {
+    margin-top: 2rem;
   width: 30%;
   padding: 0.5rem;
   color: white;
   background-color: #45105d;
   border: none;
   font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 650px) {
+    .ImageAnchor{
+        display: none;
+    }
+    .InputFields {
+        width: 90%;
+        padding-left: 0;
+        padding-top: 10%;
+    }
+    .Button {
+        width: 50%;
+    }
+}
+@media (min-width: 650px) and (max-width: 1000px) {
+    .ImageAnchor {
+        display: none;
+    }
+    .InputFields {
+        width: 90%;
+        padding-left: 0;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+    .Image {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

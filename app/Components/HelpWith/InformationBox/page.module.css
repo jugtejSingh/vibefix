@@ -2,12 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   border-radius: 40px;
   padding: 1.4rem;
   gap: 1rem;
-  width: 100%;
-
+  max-width: 30%;
   /* gradient border fix */
   border: 2px solid transparent; /* needed */
   background:
@@ -22,4 +20,15 @@
 .InformationBoxImage {
   width: 15%;
   height: 15%;
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    .InformationBox{
+       max-width: 60%;
+    }
+}
+@media (max-width: 650px) {
+    .InformationBox{
+        max-width:90%;
+    }
 }

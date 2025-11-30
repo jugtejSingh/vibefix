@@ -4,6 +4,7 @@ export default function Pricing() {
   return (
     <div className={styles.Pricing}>
       <div className={styles.PricingHeader}>
+        <h3 className={styles.PricingTitle}>Pricing</h3>
         <div className={styles.VerticalLine}></div>
       </div>
       <div className={styles.BuyNowBoxes}>

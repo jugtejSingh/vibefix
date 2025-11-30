@@ -1,9 +1,13 @@
 import styles from "./page.module.css";
+import stylesGlobal from "../../page.module.css";
 import InformationBox from "@/app/Components/HelpWith/InformationBox/InformationBox";
 export default function HelpWith() {
   return (
     <div className={styles.HelpWith}>
-      <h2>What can we help you with?</h2>
+      <h2>
+        What can we
+        <br className={stylesGlobal.MobileTextBreak} /> help you with?
+      </h2>
       <section className={styles.HelpWithBoxes}>
         <InformationBox name="Bug Fix" image="/Icons/Icon-01.png">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab

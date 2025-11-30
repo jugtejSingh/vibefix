@@ -17,3 +17,19 @@
   justify-content: center;
   flex-direction: row;
 }
+@media (max-width: 1000px) {
+    .Navbar__logo{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .Navbar__logo{
+        margin-left: 0;
+        width: 13rem;
+        height: 6rem;
+    }
+    .Navbar__links {
+        display: none;
+    }
+}

@@ -1,9 +1,13 @@
 import styles from "./page.module.css";
+import stylesGlobal from "../../page.module.css";
 import ButtonLinks from "@/app/Components/Hero/PrimaryButtonLinks/ButtonLinks";
 export default function Hero() {
   return (
     <div className={styles.Hero}>
-      <h1>You vibe it,</h1>
+      <h1>
+        You
+        <br className={stylesGlobal.MobileTextBreak} /> vibe it,
+      </h1>
       <h1>We fix it</h1>
       <h5>
         We offer the cheapest, quickest and easiest <wbr />

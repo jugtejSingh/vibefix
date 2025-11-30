@@ -8,11 +8,11 @@ export default function ContactUs() {
       <h2 className={styles.ContactUsHeading}>Enquire Now</h2>
       <form className={styles.Form}>
         <section className={styles.InputFields}>
-          <Input />
-          <Input />
-          <Input />
-          <Input />
-          <Input />
+          <Input labelText="Name" />
+          <Input labelText="Email" />
+          <Input labelText="Type of application" />
+          <Input labelText="What would you like changed" />
+          <Input labelText="What programming language is the project" />
           <TextArea />
           <button className={styles.Button}>SUBMIT</button>
         </section>

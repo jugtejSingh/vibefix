@@ -16,3 +16,13 @@
     opacity: 1;
   }
 }
+
+/*Global Styling*/
+.MobileTextBreak {
+  display: none;
+}
+@media (max-width: 650px) {
+    .MobileTextBreak {
+        display: block;
+    }
+}

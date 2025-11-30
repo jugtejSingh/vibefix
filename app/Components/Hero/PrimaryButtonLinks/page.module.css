@@ -32,3 +32,14 @@
     transform: scale(1.1);
   }
 }
+@media (max-width: 650px) {
+  .Primary {
+    width: 100%;
+    text-align: center;
+      margin-right: 100%;
+  }
+  .Secondary {
+    text-align: center;
+    width: 100%;
+  }
+}

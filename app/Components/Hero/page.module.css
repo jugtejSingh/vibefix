@@ -1,18 +1,44 @@
 .Hero {
   font-size: 3.5rem;
-  text-space: 20rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 9rem;
+  margin-left: 7%;
 }
 .Hero h5 {
   width: 35%;
-
   font-size: 1.2rem;
 }
 .HeroButtons {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+@media (max-width: 650px) {
+
+  .Hero h5 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    width: 100%;
+  }
+  .Hero {
+    margin-top: 2rem;
+    font-size: 2.8rem;
+    margin-left: 5%;
+      margin-right: 5%;
+  }
+  .HeroButtons {
+    flex-direction: column;
+    gap: 1rem;
+      width: 100%;
+  }
+}
+@media (min-width: 651px) and (max-width: 1000px) {
+  .Hero {
+    margin-left: 2rem;
+  }
+  .Hero h5 {
+    width: 60%;
+  }
 }
