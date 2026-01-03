@@ -1,9 +1,10 @@
 import styles from "./page.module.css";
 import stylesGlobal from "../../page.module.css";
 import ButtonLinks from "@/app/Components/Hero/PrimaryButtonLinks/ButtonLinks";
+import { acumin, gilroyMed } from "@/app/fonts";
 export default function Hero() {
   return (
-    <div className={styles.Hero}>
+    <div className={`${acumin.className} ${styles.Hero}`}>
       <h1>
         You
         <br className={stylesGlobal.MobileTextBreak} /> vibe it,

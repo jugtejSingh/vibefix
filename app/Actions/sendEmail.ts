@@ -1,5 +1,7 @@
 "use server";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 import nodemailer from "nodemailer";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
@@ -23,10 +25,10 @@ const redis = new Redis({
 
 const ratelimit = new Ratelimit({
   redis: redis,
-  limiter: Ratelimit.fixedWindow(3, "60 s"),
+  limiter: Ratelimit.fixedWindow(3, "300 s"),
 });
 
-export async function sendEmail(prevState: any, formData: FormData) {
+export async function sendEmail(prevState: unknown, formData: FormData) {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
   const typeApp = formData.get("typeApp") as string;
@@ -76,6 +78,7 @@ export async function sendEmail(prevState: any, formData: FormData) {
     returnForm.errorMessage = "Too many requests. Please try again later";
     return returnForm;
   }
+  console.log("Testing");
   const transporter = nodemailer.createTransport({
     host: "smtp.zoho.eu",
     port: 465,

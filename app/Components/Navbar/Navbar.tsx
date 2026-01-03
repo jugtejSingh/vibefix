@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Links from "@/app/Components/Navbar/Links/Links";
+import { acumin, gilroyMed } from "@/app/fonts";
 export default function Navbar() {
   return (
-    <div className={styles.Navbar}>
+    <div className={`${acumin.className} ${styles.Navbar}`}>
       <Image
         src={"/Logo.png"}
         alt="Logo"

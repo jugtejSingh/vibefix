@@ -56,7 +56,11 @@ export default function ContactUs() {
             error={state.language}
             name={"language"}
           />
-          <TextArea />
+          <TextArea
+            label={"Anything else you'd like us to know?"}
+            name={"message"}
+            error={state.message}
+          />
           {state.success ? (
             <h3 style={{ color: "white" }}>Your message has been sent</h3>
           ) : null}

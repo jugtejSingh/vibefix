@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 import "./globals.css";
+import { acumin, gilroyMed } from "@/app/fonts";
 
 export const metadata: Metadata = {
   title: "VibeFix",
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{ backgroundColor: "black", color: "white" }}
-        className={styles.Effect}
+        className={`${gilroyMed.className} ${styles.Effect}`}
       >
         {children}
       </body>

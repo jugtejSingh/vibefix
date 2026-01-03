@@ -1,12 +1,19 @@
 import styles from "./page.module.css";
-export default function TextArea() {
+type Props = {
+  error?: string;
+  name: string;
+  label: string;
+};
+
+export default function TextArea({ error, name, label }: Props) {
   return (
     <div className={styles.InputField}>
       <label className={styles.Label}>
-        <span className={styles.Text}>
-          Anything else you'd like us to know?
+        <span className={styles.Text}>{label}</span>
+        <textarea className={styles.TextArea} rows={6} name={name}></textarea>
+        <span className={styles.error} style={{ color: "yellow" }}>
+          {error}
         </span>
-        <textarea className={styles.TextArea} rows={6}></textarea>
       </label>
     </div>
   );
