@@ -14,8 +14,8 @@ export default function Navbar() {
       />
       <section className={styles.Navbar__links}>
         <Links text="Home" url="#" />
-        <Links text="Contact Us" url="#" />
-        <Links text="Pricing" url="#" />
+        <Links text="Contact Us" url="#contactUs" />
+        <Links text="Pricing" url="#pricing" />
       </section>
     </div>
   );

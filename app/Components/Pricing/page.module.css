@@ -32,7 +32,7 @@
   background: black;
 }
 .VerticalLine {
-  width: 0%;
+  width: 0;
   height: 90%;
   border-left: 2px solid;
   border-image: linear-gradient(
@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: row;
   gap: 5rem;
+    width: 90%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -55,9 +56,11 @@
   .Pricing {
     background-image: url("/Background/Background.png");
     background-size: contain;
+      background-repeat: no-repeat;
   }
   .PricingHeader {
     border: none;
+      background: transparent;
   }
   .VerticalLine {
     display: none;
@@ -67,9 +70,12 @@
   .Pricing {
     background-image: url("/Background/Background.png");
     background-size: contain;
+      background-repeat: no-repeat;
   }
   .PricingHeader {
     border: none;
+      background: transparent;
+      padding: 0;
   }
   .VerticalLine {
     display: none;

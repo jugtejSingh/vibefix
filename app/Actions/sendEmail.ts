@@ -40,28 +40,34 @@ export async function sendEmail(prevState: unknown, formData: FormData) {
 
   if (!name) {
     returnForm.name = "The name is required";
+    returnForm.errorMessage = "Your form is incomplete, please re-fill it";
     return returnForm;
   }
 
   if (!email) {
     returnForm.email = "The email is required";
+    returnForm.errorMessage = "Your form is incomplete, please re-fill it";
     return returnForm;
   }
   if (!typeApp) {
     returnForm.typeApp = "The Type of Application is required";
+    returnForm.errorMessage = "Your form is incomplete, please re-fill it";
     return returnForm;
   }
   if (!whatToChange) {
     returnForm.whatToChange = "This field is required";
+    returnForm.errorMessage = "Your form is incomplete, please re-fill it";
     return returnForm;
   }
   if (!language) {
     returnForm.language = "The language is required";
+    returnForm.errorMessage = "Your form is incomplete, please re-fill it";
     return returnForm;
   }
 
   if (!message) {
     returnForm.message = "The message is required";
+    returnForm.errorMessage = "Your form is incomplete, please re-fill it";
     return returnForm;
   }
   const header = await headers();

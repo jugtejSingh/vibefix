@@ -1,6 +1,6 @@
 .BuyNowBox {
-  margin-top: -1.8rem;
-  padding-top: 1rem;
+  margin-top: -2rem;
+    padding-top: 1rem;
   z-index: 1;
   background: black;
   width: 25rem;
@@ -47,15 +47,15 @@
     gap: 0.4rem;
 }
 .InnerBoxButton {
-  padding: 5% 7% 5% 7%;
+  padding: 3% 7% 3% 7%;
   text-align: center;
   border-radius: 20px;
   background: white;
-  color: black;
-  font-size: 1.2rem;
+  color: black;font-weight: bold;
+  font-size: 1.5rem;
   position: absolute;
   border: 2px solid black;
-  bottom: -2vw;
+  bottom: -1.8rem;
 }
 .PriceAndText {
   display: flex;
@@ -67,4 +67,11 @@
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 5%;
+}
+@media screen and (max-width: 1000px) {
+    .BuyNowBox {
+        margin-top: 2rem;
+        padding-top: 0;
+    }
+
 }

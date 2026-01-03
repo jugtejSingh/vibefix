@@ -6,8 +6,8 @@
   padding: 1.4rem;
   gap: 1rem;
   max-width: 30%;
-  /* gradient border fix */
-  border: 2px solid transparent; /* needed */
+  height: 25rem;
+  border: 2px solid transparent;
   background:
     linear-gradient(#000000 0 0) padding-box,
     linear-gradient(90deg, rgba(74, 36, 132, 1) 0%, rgba(127, 0, 113, 1) 100%)
@@ -18,17 +18,25 @@
   font-size: 1.2rem;
 }
 .InformationBoxImage {
-  width: 15%;
-  height: 15%;
+  width: 4rem;
+  height: 4rem;
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .InformationBox {
+    max-width: 40%;
+  }
 }
 
 @media (min-width: 650px) and (max-width: 1000px) {
-    .InformationBox{
-       max-width: 60%;
+    .InformationBox {
+        max-width: 80%;
+    }
+    .InformationBox p {
+        font-size: 1.6rem;
     }
 }
 @media (max-width: 650px) {
-    .InformationBox{
-        max-width:90%;
-    }
+  .InformationBox {
+    max-width: 90%;
+  }
 }

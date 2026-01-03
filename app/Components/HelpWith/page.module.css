@@ -4,30 +4,28 @@
   align-items: center;
   font-size: 2.5rem;
   margin-top: 15vh;
-    text-align: center;
+  text-align: center;
 }
 .HelpWithBoxes {
   display: flex;
   flex-direction: row;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
   gap: 4rem;
-    width: 100%;
+  width: 100%;
   margin: 20vh 2vw 0 2vw;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 @media (max-width: 650px) {
-    .HelpWith{
-        font-size: 2rem;
-    }
-    .HelpWithBoxes{
-        flex-direction: column;
-    }
-
+  .HelpWith {
+    font-size: 2rem;
+  }
+  .HelpWithBoxes {
+    flex-direction: column;
+  }
 }
 @media (min-width: 651px) and (max-width: 1000px) {
-    .HelpWithBoxes{
-        flex-direction: column;
-    }
-
+  .HelpWithBoxes {
+    flex-direction: column;
+  }
 }

@@ -14,8 +14,10 @@ export default function Input({ labelText, autoComplete, error, name }: Props) {
         autoComplete={autoComplete}
         name={name}
         className={styles.Input}
+        aria-invalid={!!error}
+        aria-describedby={name}
       />
-      <span className={styles.error} style={{ color: "yellow" }}>
+      <span id={name} className={styles.error} style={{ color: "#FF6B6B" }}>
         {error}
       </span>
     </label>

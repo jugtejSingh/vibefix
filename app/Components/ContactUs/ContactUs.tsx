@@ -22,10 +22,13 @@ const initialState: ContactFormState = {
 };
 
 export default function ContactUs() {
-  const [state, formAction] = useActionState(sendEmail, initialState);
+  const [state, formAction, isPending] = useActionState(
+    sendEmail,
+    initialState,
+  );
 
   return (
-    <div className={styles.ContactUs}>
+    <div className={styles.ContactUs} id={"contactUs"}>
       <h2 className={styles.ContactUsHeading}>Enquire Now</h2>
       <form className={styles.Form} action={formAction}>
         <section className={styles.InputFields}>
@@ -65,11 +68,15 @@ export default function ContactUs() {
             <h3 style={{ color: "white" }}>Your message has been sent</h3>
           ) : null}
           {state.errorMessage ? (
-            <h3 style={{ color: "red" }}>
+            <h3 style={{ color: "#FF6B6B" }}>
               There has been an error, please try again
             </h3>
           ) : null}
-          <button className={styles.Button}>SUBMIT</button>
+          {isPending ? (
+            <span className={styles.Pending}>Loading...</span>
+          ) : (
+            <button className={styles.Button}>SUBMIT</button>
+          )}
         </section>
         <section className={styles.ImageAnchor}>
           <Image

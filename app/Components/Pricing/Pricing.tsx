@@ -2,16 +2,17 @@ import styles from "./page.module.css";
 import BuyNowBoxes from "@/app/Components/Pricing/BuyNowBoxes/BuyNowBoxes";
 export default function Pricing() {
   return (
-    <div className={styles.Pricing}>
+    <div id={"pricing"} className={styles.Pricing}>
       <div className={styles.PricingHeader}>
         <h3 className={styles.PricingTitle}>Pricing</h3>
         <div className={styles.VerticalLine}></div>
       </div>
       <div className={styles.BuyNowBoxes}>
+        {/*The space in the label is important to allow 2 lines */}
         <BuyNowBoxes
           URL="/Icons/Icon-04.png"
           bgColor="4c1ea5"
-          text="Whether it’s UI glitches, broken flows, backend errors, crashes, issues with third party integrations, AI workflows, data pipelines, we dive right into your codebase or workflow to find the root cause. We apply production ready fixes that solve the issue properly and ensure the problem does not return later"
+          text="Whether it’s UI glitches, broken flows, backend errors, crashes, issues with third party integrations, AI workflows, data pipelines, we dive right into your codebase to find the root cause. We apply production ready fixes that solve the issue properly and ensure the problem does not return later"
           bulletPoints={[
             "Front-end, back-end , UI, workflows, data pipelines we fix all",
 
@@ -23,7 +24,7 @@ export default function Pricing() {
 
             "Regression fixes and stability improvements",
           ]}
-          label={"Bug Fix"}
+          label={"Bug Fix                                                  "}
           priceRange={"£10+"}
         />
         <BuyNowBoxes
@@ -32,7 +33,7 @@ export default function Pricing() {
           text="Diagnostics focuses on scanning your code base extensively to find bugs, vulnerabilities and any other future structural issues which may hinder the application in production. You receive an assessment of risks, issues and how to fix them."
           label={"Diagnostics"}
           bulletPoints={[
-            "Reviewing code for clarity and correctness",
+            "Reviewing code for clarity, structure and correctness",
 
             "Identifying vulnerabilities and unsafe patterns",
 
@@ -49,7 +50,7 @@ export default function Pricing() {
         <BuyNowBoxes
           URL="/Icons/Icon-06.png"
           bgColor="2e94bc"
-          text="Vibe coding moves ideas into code quickly, but features need structure and experience. We turn rough or incomplete features into scalable functionality, whether building new systems, refining code, or extending existing behaviour with performance and usability in mind."
+          text="Vibecoding is a brilliant tool to get up and running, however theres just times the LLM doesnt listen to you and isnt able to make the feature as you want, At vibefix will be complete the rough/incomplete features as well as make any that you may require for the amazing application"
           bulletPoints={[
             "Building new features for both front-end and back-end",
 

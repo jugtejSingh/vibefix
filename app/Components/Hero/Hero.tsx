@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import stylesGlobal from "../../page.module.css";
 import ButtonLinks from "@/app/Components/Hero/PrimaryButtonLinks/ButtonLinks";
-import { acumin, gilroyMed } from "@/app/fonts";
+import { acumin } from "@/app/fonts";
 export default function Hero() {
   return (
     <div className={`${acumin.className} ${styles.Hero}`}>
@@ -17,10 +17,10 @@ export default function Hero() {
         <wbr /> can focus on <wbr /> being the innovator you are.
       </h5>
       <section className={styles.HeroButtons}>
-        <ButtonLinks URL="#" variant="primary">
+        <ButtonLinks URL="#contactUs" variant="primary">
           Fix My Code
         </ButtonLinks>
-        <ButtonLinks URL="#" variant="secondary">
+        <ButtonLinks URL="#helpWith" variant="secondary">
           Learn More
         </ButtonLinks>
       </section>

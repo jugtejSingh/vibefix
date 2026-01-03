@@ -50,8 +50,8 @@ export default function BuyNowBoxes({
               ))}
           </section>
         </section>
-        <a href={"/"} className={styles.InnerBoxButton}>
-          Buy Now
+        <a href={"#contactUs"} className={styles.InnerBoxButton}>
+          BUY NOW
         </a>
       </div>
     </div>

@@ -47,6 +47,16 @@
   border: none;
   font-size: 1.5rem;
     margin-bottom: 2rem;
+    cursor: pointer;
+}
+.Pending{
+    font-size: 2rem;
+    margin-top: 2rem;
+    width: 30%;
+    padding: 0.5rem;
+    color: white;
+    border: none;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 650px) {

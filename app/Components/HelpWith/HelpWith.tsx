@@ -3,7 +3,7 @@ import stylesGlobal from "../../page.module.css";
 import InformationBox from "@/app/Components/HelpWith/InformationBox/InformationBox";
 export default function HelpWith() {
   return (
-    <div className={styles.HelpWith}>
+    <div className={styles.HelpWith} id={"helpWith"}>
       <h2>
         What can we
         <br className={stylesGlobal.MobileTextBreak} /> help you with?

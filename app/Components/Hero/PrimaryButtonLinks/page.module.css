@@ -14,7 +14,7 @@
 }
 .Primary:hover,
 .Secondary:hover {
-  animation: transform 1s;
+  animation: transform 1s forwards;
 }
 .Secondary {
     border-radius: 20px;
