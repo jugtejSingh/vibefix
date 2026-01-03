@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 13%;
   border-radius: 1rem;
   position: relative;
 }
@@ -29,17 +29,42 @@
   height: auto;
 }
 .InnerBoxText {
-  margin-top: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
   padding-bottom: 3rem;
 }
+.BulletPointText{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 0 7% 2% 3%;
+    gap: 4%;
+}
+.BulletPoints{
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
 .InnerBoxButton {
-  width: 30%;
-  height: 3rem;
-  border-radius: 10px;
+  padding: 5% 7% 5% 7%;
+  text-align: center;
+  border-radius: 20px;
+  background: white;
+  color: black;
   font-size: 1.2rem;
   position: absolute;
-  border: none;
+  border: 2px solid black;
   bottom: -2vw;
+}
+.PriceAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+.Prices {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 5%;
 }

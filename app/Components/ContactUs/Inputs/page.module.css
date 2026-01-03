@@ -1,12 +1,12 @@
-.Label {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
 .Input {
-  height: 2.5rem;
+  height: 2.2rem;
   background-color: #45105d;
   border: none;
     color: white;
   border-radius: 8px;
+}
+.InputField{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
