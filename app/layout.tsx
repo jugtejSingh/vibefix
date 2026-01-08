@@ -20,6 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/ico" sizes="32x32" href="/favicon.ico" />
+      </head>
       <body
         style={{ backgroundColor: "black", color: "white" }}
         className={`${gilroyMed.className} ${styles.Effect}`}
